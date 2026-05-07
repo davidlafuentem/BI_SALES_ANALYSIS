@@ -1,17 +1,19 @@
-# 📊 BI Sales Analysis Project
+## 🏢 1. Business Context
+
+This analysis simulates a retail company aiming to improve sales performance and profitability.
+
+## 🎯 Business Questions
+- Which products drive the most revenue and profit?
+- What is the impact of returns on business performance?
+- Are there data quality issues affecting decision-making?
 
 ## 🎯 Objective
-Analyze sales performance and profitability...
+Analyze sales performance and data quality to identify key issues and insights.
 
-## 🏗️ Architecture
-(diagrama o explicación)
+## 📁 Dataset
+Sales dataset containing transactions, products, customers, and financial metrics.
 
-## ⚙️ Tech Stack
-Python | SQL | Power BI | PostgreSQL
-
-## 📊 Dashboard
-(imágenes)
-
-## 💡 Key Insights
-- Insight 1
-- Insight 2
+## 🧠 Approach
+- Data exploration
+- Data quality assessment
+- Initial insights
