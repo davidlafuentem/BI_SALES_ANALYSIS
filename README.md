@@ -11,7 +11,6 @@ This project combines **Python-based exploratory data analysis**, **data cleanin
 - [Interactive Power BI Dashboard](https://davidlafuentem.github.io/BI_SALES_ANALYSIS/dashboard/)
 - [Jupyter Notebook](./notebooks/Final_financial_EDA.ipynb)
 - [Dashboard Files](./dashboard/)
-- [SQL Files](./sql/)
 - [Data Folder](./data/)
 
 ---
@@ -102,8 +101,6 @@ BI_SALES_ANALYSIS/
 │   └── sales_clean.csv
 ├── notebooks/
 │   └── Final_financial_EDA.ipynb
-├── scripts/
-├── sql/
 └── README.md
 ```
 
@@ -308,6 +305,33 @@ The dashboard is published through GitHub Pages and can be accessed here:
 [Open Interactive Dashboard](https://davidlafuentem.github.io/BI_SALES_ANALYSIS/dashboard/)
 
 The dashboard complements the Python analysis by providing an interactive way to explore the cleaned and analyzed data.
+
+## ⚠️ Data Quality Note — Unassigned Transactions in Power BI Dashboard
+
+A total of **114 transactions** (5.7% of the dataset) contain missing values 
+in at least one categorical field (`Region`, `Product`, or `Salesperson`), 
+representing **$1,022,924 in revenue** (4.94% of total revenue).
+
+| Missing Field | Transactions | Revenue Impact |
+|---|---|---|
+| Region | 39 | $315,402 |
+| Product | 40 | $397,339 |
+| Salesperson | 40 | $360,943 |
+
+These records could not be reliably imputed based on existing data patterns, 
+as confirmed during the Python EDA phase.
+
+To minimise the impact on financial accuracy, custom DAX measures were created 
+in the Power BI dashboard to ensure that unassigned transactions are always 
+included in financial totals, regardless of the active filters:
+
+- **Total Revenue** always includes the full $20.7M baseline
+- **Profit Margin** is calculated over the complete revenue base
+- Filtering by `Region`, `Product`, or `Salesperson` never silently 
+  excludes unassigned revenue from KPI cards
+
+This approach preserves full financial integrity while allowing clean 
+categorical analysis across all dashboard pages.
 
 ---
 
