@@ -81,18 +81,20 @@ The original dataset contains **2,000 rows** and **10 columns**.
 
 ## 📁 Repository Structure
 
+## 📁 Repository Structure
+
 ```text
 BI_SALES_ANALYSIS/
 ├── dashboard/
-│   ├── index.html
-│   └── README.md
+│   ├── Dashboard_BI_SALES_ANALYSIS.pbix
+│   └── index.html
 ├── data/
-│   ├── Sales_Dataset_2024.xlsx
-│   └── sales_clean.csv
+│   ├── README.md
+│   └── sales_clean.xlsx
 ├── notebooks/
-│   └── Final_financial_EDA.ipynb
+│   ├── Final_financial_EDA.ipynb
+│   └── README.md
 └── README.md
-```
 
 ---
 
