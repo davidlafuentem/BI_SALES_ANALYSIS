@@ -9,9 +9,9 @@ This project combines **Python-based exploratory data analysis**, **data cleanin
 ## 🔗 Project Links
 
 - [Interactive Power BI Dashboard](https://davidlafuentem.github.io/BI_SALES_ANALYSIS/dashboard/)
-- [Jupyter Notebook](./notebooks/Final_financial_EDA.ipynb)
-- [Dashboard Files](./dashboard/)
-- [Data Folder](./data/)
+- [Jupyter Notebook](https://github.com/davidlafuentem/BI_SALES_ANALYSIS/blob/main/notebooks/Final_financial_EDA.ipynb)
+- [[Dashboard Files](https://github.com/davidlafuentem/BI_SALES_ANALYSIS/tree/main/dashboard)
+- [Data Folder](https://github.com/davidlafuentem/BI_SALES_ANALYSIS/tree/main/data)
 
 ---
 
